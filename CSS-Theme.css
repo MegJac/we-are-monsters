@@ -1,12 +1,12 @@
 /* BOUTON CHANGEMENT DE THEME ---*/
-@media (prefers-color-scheme: dark) {#color-scheme-toggle .moon{display: none}}
+@media (prefers-color-scheme: dark) {#theme-toggle-button .moon{display: none}}
 @media (prefers-color-scheme: light) {#color-scheme-toggle .sun{display: none}}
 .color-scheme-toggle,
-[data-color-scheme=  "light  "] #color-scheme-toggle .moon,
-[data-color-scheme=  "dark  "] #color-scheme-toggle .sun {display: block;width: 100%;}
+[data-color-scheme=  "light  "] #theme-toggle-button .moon,
+[data-color-scheme=  "dark  "] #theme-toggle-button .sun {display: block;width: 100%;}
 
-[data-color-scheme=  "dark  "] #color-scheme-toggle .moon,
-[data-color-scheme=  "light  "] #color-scheme-toggle .sun {display: none}
+[data-color-scheme=  "dark  "] #theme-toggle-button .moon,
+[data-color-scheme=  "light  "] #theme-toggle-button .sun {display: none}
 
 /* The switch - the box around the slider */
 #theme-toggle-button {
