@@ -1,0 +1,329 @@
+
+.containerPa {
+    display: grid;
+    grid-template-columns: 250px 200px 170px 275px;
+    grid-template-rows: 90px 250px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--neutralDark);
+    max-width: 900px;
+    padding: 1px;
+    padding-left: 5px;
+}
+
+.HeaderPa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 40px;
+    gap: 0px 0px;
+    grid-area: 1 / 1 / 2 / 5;
+    margin-bottom: 2px;
+}
+
+.TitrePA {
+    grid-area: 1 / 1 / 2 / 4;
+    background-image: linear-gradient( -45deg, var(--accentClrDark), var(--contrast) ) !important;
+    border: 1px solid var(--neutral);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.titre_pa {
+    position: relative;
+    top: 5px;
+    width: 795px;
+    height: 30px;
+    letter-spacing: 8px;
+    word-spacing: 3px;
+    padding-top: 7px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Anisha;
+    color: white;
+    font-size: 26px;
+    text-shadow: -2px 1px 1px #a469f5;
+}
+
+.LinksPa {
+    grid-area: 2 / 1 / 3 / 4;
+    background-color: var(--neutral);
+    border: 1px solid var(--neutral);
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3px;
+}
+
+.MiddlePa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.ContextePa {
+    grid-area: 1 / 1 / 3 / 2;
+    display: inline-block;
+    line-height: 20px;
+    background-color: var(--neutral);
+    overflow: auto;
+    color: var(--accentClrDarker);
+    text-align: Justify;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.TopPart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: var(--neutral);
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.PreAnn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 0px 0px;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.Preliens {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 0px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Pre {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: var(--neutralDarker);
+    border-radius: 5px;
+    height: 23px;
+    line-height: 28px;
+    margin-left: 5px;
+    margin-top: 2px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.StaffNews {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 0px 5px;
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.fondlink1 {
+    width: 16%;
+    height: 28px;
+    background-color: var(--contrast);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: -1px 12px;
+}
+
+.fondlink2 {
+    width: 95%;
+    height: 24px;
+    line-height: 22px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.partenaires_pa {
+    position: relative;
+    width: 245px;
+    height: 25px;
+    item-align: center;
+    display: contents;
+}
+
+.partenaire_ligne {
+    font-size: 10px;
+    background-image: linear-gradient( -45deg, var(--accentClrDark), var(--contrast) ) !important;
+    color: white;
+    border: 1px solid #f6f5f5;
+    font-weight: 400;
+    font-family: arial, "Petit Formal Script ";
+    margin-bottom: 1px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    text-transform: uppercase;
+}
+
+.partenaire_bouton {
+    font-size: 10px;
+    background: var(--contrast);
+    color: white;
+    border: 1px solid #f6f5f5;
+    font-weight: 300;
+    font-family: arial, "Petit Formal Script ";
+    text-transform: uppercase;
+    height: 20px;
+}
+
+.staff div {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 115px;
+    margin: 5px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.staff img {
+    width: 115px;
+    height: 153px;
+    padding: 2px;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.staff p {
+    position: absolute;
+    margin-top: -166px;
+    width: 116px;
+    height: 154px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.55s linear;
+    -webkit-transition: all 0.55s linear;
+    color: white;
+    text-align: center;
+    font-family: "Playfair Display ", serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.staff div:hover p {
+    opacity: 1;
+    background: var(--contrast);
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: block;
+}
+
+.staff p a {
+    display: block;
+}
+
+.texte_1 {
+    height: 50px;
+    overflow: auto;
+    padding: 3px;
+    line-height: 17px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--contrast);
+    position: relative;
+    top: -5px;
+}
+
+.titre_4 {
+    background-color: var(--neutralDarker);
+    border-radius: 5px;
+    height: 23px;
+    line-height: 4px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    color: white;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.titre_4 p {
+    text-align: center;
+    padding: 5px;
+}
+
+.scena {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.TP {
+    color: white;
+    background-color: var(--contrast);
+    border-radius: 5px;
+    padding-top: 4px;
+    margin-bottom: 2px;
+}
+
+
+.predef1 {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--contrast);
+}
+
+.predef2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--neutral);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+}
+
+.fc {
+    color: var(--accentClrDark);
+}
+
+.scena2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    padding: 2px;
+}
+
+.predef2 a {
+    color: var(--accentClrDarker);
+    font-weight: 400;
+}
+
+.predef1 img {
+    border-radius: 5px;
+}
