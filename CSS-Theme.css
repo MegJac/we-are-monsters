@@ -1,71 +1,24 @@
-/* The switch - the box around the slider */
-#theme-toggle-button {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 7em;
-  cursor: pointer;
+/* BOUTON CHANGEMENT DE THEME ---*/
+@media (prefers-color-scheme: dark) {.color-scheme-toggle .dark{display: none}}
+@media (prefers-color-scheme: light) {.color-scheme-toggle .light{display: none}}
+.color-scheme-toggle,
+[data-color-scheme=  "light  "] .color-scheme-toggle .dark,
+[data-color-scheme=  "dark  "] .color-scheme-toggle .light {display: block;width: 100%;}
+
+[data-color-scheme=  "dark  "] .color-scheme-toggle .dark,
+[data-color-scheme=  "light  "] .color-scheme-toggle .light {display: none}
+
+.color-scheme-toggle {
+  background-color: var(--neutral);
+  font-size: 24px;
+  aspect-ratio: 1/1;
+  text-align: center;
+  border-radius: 100px;
+  color: var(--textColor);
+  margin: 8px 0;
 }
 
-/* Hide default HTML checkbox */
-#toggle-button{
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-#container,
-#patches,
-#stars,
-#button,
-#sun,
-#moon,
-#cloud {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.25s;
-}
-
-/* night sky background */
-#toggle-button:checked + svg #container {
-  fill: #2b4360;
-}
-
-/* move button to right when checked */
-#toggle-button:checked + svg #button {
-  transform: translate(28px, 2.333px);
-}
-
-/* show/hide sun and moon based on checkbox state */
-#sun {
-  opacity: 1;
-}
-
-#toggle-button:checked + svg #sun {
-  opacity: 0;
-}
-
-#moon {
-  opacity: 0;
-}
-
-#toggle-button:checked + svg #moon {
-  opacity: 1;
-}
-
-/* show or hide background items on checkbox state */
-#cloud {
-  opacity: 1;
-}
-
-#toggle-button:checked + svg #cloud {
-  opacity: 0;
-}
-
-#stars {
-  opacity: 0;
-}
-
-#toggle-button:checked + svg #stars {
-  opacity: 1;
+.color-scheme-toggle:hover {
+  color: var(--neutral);
+  background-color: var(--accentClr);
 }
