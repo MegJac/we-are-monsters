@@ -1,24 +1,14 @@
-/* BOUTON CHANGEMENT DE THEME ---*/
-@media (prefers-color-scheme: dark) {#theme-toggle-button .moon{display: none}}
-@media (prefers-color-scheme: light) {#color-scheme-toggle .sun{display: none}}
-.color-scheme-toggle,
-[data-color-scheme=  "light  "] #theme-toggle-button .moon,
-[data-color-scheme=  "dark  "] #theme-toggle-button .sun {display: block;width: 100%;}
-
-[data-color-scheme=  "dark  "] #theme-toggle-button .moon,
-[data-color-scheme=  "light  "] #theme-toggle-button .sun {display: none}
-
 /* The switch - the box around the slider */
 #theme-toggle-button {
-  font-size: 20px;
+  font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 8em;
+  width: 7em;
   cursor: pointer;
 }
 
 /* Hide default HTML checkbox */
-#toggle, input#toggle {
+#toggle-button{
   opacity: 0;
   width: 0;
   height: 0;
@@ -37,12 +27,12 @@
 }
 
 /* night sky background */
-#toggle:checked + svg #container {
+#toggle-button:checked + svg #container {
   fill: #2b4360;
 }
 
 /* move button to right when checked */
-#toggle:checked + svg #button {
+#toggle-button:checked + svg #button {
   transform: translate(28px, 2.333px);
 }
 
@@ -51,7 +41,7 @@
   opacity: 1;
 }
 
-#toggle:checked + svg #sun {
+#toggle-button:checked + svg #sun {
   opacity: 0;
 }
 
@@ -59,7 +49,7 @@
   opacity: 0;
 }
 
-#toggle:checked + svg #moon {
+#toggle-button:checked + svg #moon {
   opacity: 1;
 }
 
@@ -68,7 +58,7 @@
   opacity: 1;
 }
 
-#toggle:checked + svg #cloud {
+#toggle-button:checked + svg #cloud {
   opacity: 0;
 }
 
@@ -76,6 +66,6 @@
   opacity: 0;
 }
 
-#toggle:checked + svg #stars {
+#toggle-button:checked + svg #stars {
   opacity: 1;
 }
