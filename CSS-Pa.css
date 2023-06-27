@@ -1,4 +1,4 @@
-
+/* Container de la page d'accueil */
 .containerPa {
     display: grid;
     grid-template-columns: 250px 200px 170px 275px;
@@ -13,6 +13,7 @@
     padding-left: 5px;
 }
 
+/* Container de la section du haut de la PA */
 .HeaderPa {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -22,13 +23,14 @@
     margin-bottom: 2px;
 }
 
+/* Container du titre seulement */
 .TitrePA {
     grid-area: 1 / 1 / 2 / 4;
     background-image: linear-gradient( -45deg, var(--accentClrDark), var(--contrast) ) !important;
     border: 1px solid var(--neutral);
     border-radius: 10px 10px 0px 0px;
 }
-
+/* Style du titre */
 .titre_pa {
     position: relative;
     top: 5px;
@@ -44,7 +46,7 @@
     font-size: 26px;
     text-shadow: -2px 1px 1px #a469f5;
 }
-
+/* Container de la navigation */
 .LinksPa {
     grid-area: 2 / 1 / 3 / 4;
     background-color: var(--neutral);
@@ -58,7 +60,7 @@
     align-content: center;
     margin-bottom: 3px;
 }
-
+/* Container de la section du millieu */
 .MiddlePa {
     display: grid;
     grid-template-columns: 1fr;
@@ -66,7 +68,7 @@
     gap: 0px 0px;
     grid-area: 2 / 2 / 3 / 4;
 }
-
+/* Container du contexte */
 .ContextePa {
     grid-area: 1 / 1 / 3 / 2;
     display: inline-block;
@@ -79,7 +81,7 @@
     padding: 7px;
     border-radius: 5px;
 }
-
+/* Container des topsites et partenaires*/
 .TopPart {
     display: grid;
     grid-template-columns: 1fr;
@@ -89,7 +91,7 @@
     border-radius: 5px;
     margin: 3px;
 }
-
+/* Container des preliens et annonces*/
 .PreAnn {
     display: grid;
     grid-template-columns: 1fr;
@@ -98,6 +100,7 @@
     grid-area: 2 / 1 / 3 / 2;
 }
 
+/* Container des preliens*/
 .Preliens {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -105,7 +108,7 @@
     gap: 5px 0px;
     grid-area: 1 / 1 / 2 / 2;
 }
-
+/* Style des preliens*/
 .Pre {
     grid-area: 1 / 1 / 2 / 3;
     background-color: var(--neutralDarker);
@@ -118,7 +121,7 @@
     font-size: 14px;
     color: white;
 }
-
+/* Container du staff et des news*/
 .StaffNews {
     display: grid;
     grid-template-columns: 1fr;
@@ -126,7 +129,7 @@
     gap: 0px 5px;
     grid-area: 2 / 4 / 3 / 5;
 }
-
+/* style des liens individuels*/
 .fondlink1 {
     width: 16%;
     height: 28px;
@@ -145,7 +148,7 @@
     border: 1px solid white;
     text-align: center;
 }
-
+/* Style des partenaires*/
 .partenaires_pa {
     position: relative;
     width: 245px;
@@ -179,7 +182,7 @@
     text-transform: uppercase;
     height: 20px;
 }
-
+/* style du staff */
 .staff div {
     display: inline-block;
     vertical-align: bottom;
@@ -197,7 +200,7 @@
     position: relative;
     top: -10px;
 }
-
+/* texte derrière image*/
 .staff p {
     position: absolute;
     margin-top: -166px;
@@ -231,7 +234,7 @@
 .staff p a {
     display: block;
 }
-
+/* Style des textes*/
 .texte_1 {
     height: 50px;
     overflow: auto;
@@ -279,7 +282,7 @@
     margin-bottom: 2px;
 }
 
-
+/* Container et style des predef*/
 .predef1 {
     width: 30%;
     height: 50px;
