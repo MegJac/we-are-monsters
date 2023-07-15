@@ -10,10 +10,13 @@
     grid-auto-flow: row;
     max-width: 880px;
     max-height: 225px;
-    border: 3px solid var(--neutralDarker);
-    border-radius: 10px;
+    border: 10px ridge var(--neutralDarker);
+    border-radius: 20px;
     padding: 5px;
-    color: var(--accentClrDark);
+    color: var(
+    --accentClrDark);
+    background: var(
+    --title-size);
     font-family: serif;
 }
 
